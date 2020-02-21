@@ -1,0 +1,12 @@
+repositories:
+- name: vio
+  url: https://charts.vio.sh
+
+releases:
+- name: {{ .Environment.Name }}-test
+  namespace: default
+  chart: vio/test
+  version: 0.0.1
+  values:
+  - ./values/test.yaml.gotmpl
+

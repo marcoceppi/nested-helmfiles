@@ -1,0 +1,5 @@
+helmfiles:
+- path: ../../models/unit1/helmfile.yaml
+  values:
+  - config:
+      ip: 10.11.0.1
